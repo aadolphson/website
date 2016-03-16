@@ -1,0 +1,191 @@
+/* Global styles */
+body {
+  color: #4B4342;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.content {
+  padding: 2%;
+}
+
+#wrapper > footer {
+  color: #fff;
+  background-color: #4B4342;
+  padding: 2em;
+  text-align: center;
+}
+
+/* text styles */
+header > h1 {
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -9999px;
+}
+
+h2 {
+  border-bottom: 3px solid #4B4342;
+  text-align: center;
+}
+
+/* link styles */
+a { 
+  color: #4B4342;
+}
+
+a:hover, a:focus {
+
+  color: #434B4B;
+}
+
+a:visited {
+  color: #717569;
+}
+
+/* Navigation styles */
+nav {
+  float: left;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  border: 1px solid #4B4342;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+}
+
+nav a:hover {
+  background-color: #ddd;
+}
+
+/* Large screen sizes - desktops */
+@media only screen and (min-width: 960px) {
+  body {
+    background-color: #807371;
+  }
+
+  #wrapper {
+    background-color: #fff;
+    box-shadow: 3px 3px 3px #4B4342;
+    margin: 0px auto;
+    width: 960px;
+  }
+}
+
+/* Tablet and up */
+
+@media only screen and (min-width: 768px) {
+  header > h1 {
+    background-image: url(../images/logo1.png);
+    background-position: center;
+    height: 100px;
+  }
+
+  section img { 
+    float: left;
+    margin-right: 1%;
+  }
+
+  nav {
+    border-top: 3px solid #4B4342;
+    border-bottom: 3px solid #4B4342;
+    color: #4B4342;
+  }
+
+  nav li {
+    border: none;
+    float: left;
+    margin-right: 0;
+    width: 33%;
+    color: #4B4342;
+  }
+
+  nav li:last-child {
+    width: 33.3%;
+  }
+
+  nav a {
+    padding: 1%;
+  }
+
+
+  /* handle bullets appearing under floated images */
+  ul {
+    overflow: hidden;
+  }
+}
+
+
+/* small screens up to tablets */
+@media only screen and (max-width: 768px) {
+
+  header > h1 {
+    background-image: url(../images/logo_mobile.png);
+    /*width: 20px;*/
+    height: 100px;
+
+  }
+
+  section img {
+    display: block;
+    margin: 0px auto;
+  }
+
+  header {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  nav li {
+    border-radius: 5px;
+    margin: 1% auto;
+    width: 90%;
+    color: #4B4342;
+    
+  }
+
+  h3 { text-align: center; }
+  
+}
+
+/* Small screens 480px and lower */
+@media only screen and (max-width: 480px) {
+  header > h1 {
+    background-size: 80%;
+  }
+
+  section img {
+    display: none;
+  }
+
+}
+
+fieldset {
+  border: none;
+  padding: 0 0 2em 0;
+}
+
+label, input [type=submit] {
+  display: block;
+}
+
+table {
+	float: right;
+  overflow: hidden;
+  padding: 0%;
+}
+
+table, td, th { 
+  border: 1px solid gray
+}

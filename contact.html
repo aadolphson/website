@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Andrew Adolphson - Contact</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+  
+  <body>
+    <div id="wrapper">
+      <header>
+         <h1>Andrew Adolphson - Contact</h1>
+       </header>
+
+       <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="music.html">Music</a></li>
+          <li><a href="software.html">Software</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+       <section class="content">
+         <h2>Contact</h2>
+          
+          <p>All fields with an asterisk (*) are reqiuired.</p>
+          <form method="post" action="http://bphogan.com/html/contact.php">
+            <fieldset>
+              <legend>About You</legend>
+              <label for="name">* Name</label>
+              <input placeholder="Name" required id="name" name="name" type="text">
+              
+              <label for="email">* Email</label>
+              <input placeholder="your@email.com" required id="email" name="email" type="email"> 
+              
+              <label for="message">* Message</label>
+              <textarea required id="message" name="message"></textarea>
+             
+              <label for="phone_number">* Phone Number</label>
+              <input placeholder="555-555-5555" required id="phone_number" name="phone_number" type="text">
+              <input type="submit" value="Submit">
+            </fieldset>
+          </form>
+
+          <p> Or send an email to:
+          </p>
+          <p>
+          <a href="mailto:aadolphson@student.cvtc.edu">aadolphson@student.cvtc.edu</a>
+          </p>
+         </section>
+       <footer>
+           <small>Copyright &copy; Andrew Adolphson 2016</small>
+       </footer>
+      
+    </div>
+  </body>
+</html>
